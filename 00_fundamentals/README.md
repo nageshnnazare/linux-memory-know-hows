@@ -12,29 +12,29 @@ hides that gap with **caches**:
 ```
    CPU core
    +-------------------+        speeds (rough order of magnitude)
-   |  registers   ~1 cycle    < 1 ns,    <1 KiB
+   |  registers        |         ~1 cycle    < 1 ns,    <1 KiB
    |                   |
-   |  L1 d-cache  ~4 cycles   ~1 ns,    32 KiB / core
+   |  L1 d-cache       |         ~4 cycles   ~1 ns,    32 KiB / core
    |                   |
-   |  L1 i-cache  ~4 cycles   ~1 ns,    32 KiB / core
+   |  L1 i-cache       |         ~4 cycles   ~1 ns,    32 KiB / core
    |                   |
-   |  L2 cache    ~12 cycles  ~3 ns,    256 KiB - 1 MiB / core
+   |  L2 cache         |         ~12 cycles  ~3 ns,    256 KiB - 1 MiB / core
    |                   |
-   |  L3 cache    ~40 cycles  ~10 ns,   8-32 MiB / socket (shared)
+   |  L3 cache         |         ~40 cycles  ~10 ns,   8-32 MiB / socket (shared)
    +-------------------+
             |
        memory bus
             |
    +-------------------+
-   |  DRAM          ~200 cycles  ~80 ns,   GiBs
+   |  DRAM             |         ~200 cycles  ~80 ns,   GiBs
    +-------------------+
             |
        PCIe / NVMe / SATA
             |
    +-------------------+
-   |  NVMe SSD                  ~10 us,   TiBs
-   |  SATA SSD                  ~100 us
-   |  Spinning disk             ~10 ms
+   |  NVMe SSD         |         ~10 us,   TiBs
+   |  SATA SSD         |         ~100 us
+   |  Spinning disk    |         ~10 ms
    +-------------------+
 ```
 
@@ -87,8 +87,8 @@ address.
 ```
    uint32_t x = 0x11223344;        // value 287454020
    bytes at &x:   44 33 22 11        <- little-endian
-                  ^               ^
-                  low addr        high addr
+                  ^         ^
+           low addr   high addr
 ```
 
 Run [`03_endianness.c`](03_endianness.c) to print the bytes of an int on your
@@ -149,19 +149,19 @@ is for. We will see this again in [01_virtual_memory](../01_virtual_memory/).
 ```
    type          size on x86_64    alignment
    ----          --------------    ---------
-   char            1                1
-   short           2                2
-   int             4                4
-   long            8                8
-   long long       8                8
-   void *          8                8
-   float           4                4
-   double          8                8
-   long double    16               16     (80-bit extended in 128-bit slot)
-   _Complex double 16              8
-   __m128         16               16     (SSE)
-   __m256         32               32     (AVX)
-   __m512         64               64     (AVX-512)
+   char             1                1
+   short            2                2
+   int              4                4
+   long             8                8
+   long long        8                8
+   void *           8                8
+   float            4                4
+   double           8                8
+   long double     16               16     (80-bit extended in 128-bit slot)
+   _Complex double 16                8
+   __m128          16               16     (SSE)
+   __m256          32               32     (AVX)
+   __m512          64               64     (AVX-512)
 ```
 
 Use `_Alignof(T)` (C11) / `alignof(T)` to query, and `_Alignas(N)` /
@@ -175,8 +175,8 @@ Padding inside structs is inserted automatically:
 
 ```c
 struct s { char a; int b; char c; };
-//          ^      ^     ^
-//       offset 0  4     8
+//          ^      ^      ^
+//   offset 0      4      8
 //   sizeof = 12  (3 bytes of padding after a, 3 after c)
 ```
 
