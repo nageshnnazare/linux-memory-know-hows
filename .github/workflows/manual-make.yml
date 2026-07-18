@@ -9,6 +9,9 @@ permissions:
 jobs:
   run-and-annotate:
     runs-on: ubuntu-latest
+    env:
+      RUN_TIMEOUT_SECONDS: 600
+      DEMO_TIMEOUT_SECONDS: 15
 
     steps:
       - name: Checkout repository
