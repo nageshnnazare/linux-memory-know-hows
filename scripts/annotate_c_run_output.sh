@@ -16,11 +16,51 @@ else
   done < <(find . -type f -name '*.c' -print0 | sort -z)
 fi
 
+run_timeout_seconds="${RUN_TIMEOUT_SECONDS:-600}"
+demo_timeout_seconds="${DEMO_TIMEOUT_SECONDS:-15}"
+
+run_with_timeout() {
+  local timeout_seconds="$1"
+  shift
+
+  local python_bin=""
+  if command -v python3 >/dev/null 2>&1; then
+    python_bin="python3"
+  elif command -v python >/dev/null 2>&1; then
+    python_bin="python"
+  else
+    echo "python3/python not found; cannot enforce timeouts" >&2
+    return 127
+  fi
+
+  "$python_bin" - "$timeout_seconds" "$@" <<'PY'
+import subprocess
+import sys
+
+timeout_seconds = int(sys.argv[1])
+cmd = sys.argv[2:]
+
+try:
+    completed = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout_seconds)
+    if completed.stdout:
+        sys.stdout.write(completed.stdout)
+    if completed.stderr:
+        sys.stderr.write(completed.stderr)
+    sys.exit(completed.returncode)
+except subprocess.TimeoutExpired as exc:
+    if exc.stdout:
+        sys.stdout.write(exc.stdout)
+    if exc.stderr:
+        sys.stderr.write(exc.stderr)
+    sys.exit(124)
+PY
+}
+
 run_log="$(mktemp)"
 trap 'rm -f "$run_log"' EXIT
 
-if ! make run >"$run_log" 2>&1; then
-  echo "make run finished with a non-zero exit code; continuing to annotate successful demos."
+if ! run_with_timeout "$run_timeout_seconds" make run >"$run_log" 2>&1; then
+  echo "make run finished with a non-zero exit code or timed out; continuing to annotate successful demos."
 fi
 cat "$run_log"
 
@@ -47,12 +87,16 @@ for rel_path in "${sources[@]}"; do
 
   status=0
   output=""
-  if ! output="$( (cd "$dir" && ./$target) 2>&1 )"; then
+  if ! output="$( (cd "$dir" && run_with_timeout "$demo_timeout_seconds" ./$target) 2>&1 )"; then
     status=$?
   fi
 
   if [[ -z "$output" ]]; then
-    output="(no output)"
+    if [[ $status -eq 124 ]]; then
+      output="(timed out after ${demo_timeout_seconds}s)"
+    else
+      output="(no output)"
+    fi
   fi
 
   escaped_output="$(printf '%s' "$output" | sed 's#\*/#* /#g')"
