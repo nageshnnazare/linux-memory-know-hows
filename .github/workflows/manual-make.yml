@@ -1,0 +1,35 @@
+name: Manual make run and annotate
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-and-annotate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Make helper script executable
+        run: chmod +x scripts/annotate_c_run_output.sh
+
+      - name: Run make and annotate C sources
+        run: ./scripts/annotate_c_run_output.sh
+
+      - name: Commit updated source files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No source annotations were updated."
+          else
+            git commit -m "Annotate C demos with run output"
+            git push
+          fi
