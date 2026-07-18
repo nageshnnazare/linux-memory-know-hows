@@ -46,3 +46,16 @@ int main(void)
 
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 04_heap_malloc/13_malloc_trim.c
+ * Command: make -C 04_heap_malloc 13_malloc_trim
+ * Exit status: 0
+ * Output:
+ * [start             ] VmSize=2692 KiB  VmRSS=1356 KiB
+ * [after 200x64K     ] VmSize=15436 KiB  VmRSS=14420 KiB
+ * [after free        ] VmSize=2696 KiB  VmRSS=1744 KiB
+ * [after malloc_trim ] VmSize=2568 KiB  VmRSS=1616 KiB
+ * AUTO-GENERATED RUN OUTPUT END
+ */

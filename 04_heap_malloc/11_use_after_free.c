@@ -44,3 +44,15 @@ int main(void)
     /* don't dereference r -- likely UB */
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 04_heap_malloc/11_use_after_free.c
+ * Command: make -C 04_heap_malloc 11_use_after_free
+ * Exit status: 0
+ * Output:
+ * alloc:        p=0x558d19a492a0  data="live"
+ * after free:   p=0x558d19a492a0  data (first 8 hex): 499ad15805000000
+ * q=0x558d19a492a0  r=0x558d19a4a2e0   (note q==p, r could be anywhere)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

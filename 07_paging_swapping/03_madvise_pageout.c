@@ -45,3 +45,15 @@ int main(void)
     munmap(p, n);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 07_paging_swapping/03_madvise_pageout.c
+ * Command: make -C 07_paging_swapping 03_madvise_pageout
+ * Exit status: 0
+ * Output:
+ * touched: RSS=66892 KiB
+ * after MADV_PAGEOUT: RSS=1616 KiB (may take a moment)
+ * after touch: RSS=1620 KiB
+ * AUTO-GENERATED RUN OUTPUT END
+ */

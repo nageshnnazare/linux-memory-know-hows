@@ -155,3 +155,15 @@ int main(void)
     my_free(huge);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 14_putting_it_together/04_freelist.c
+ * Command: make -C 14_putting_it_together 04_freelist
+ * Exit status: 0
+ * Output:
+ * a=0x7fb87bd00020 b=0x7fb87bd00090 c=0x7fb87bd004b0
+ * after free(b) + alloc(900): d=0x7fb87bd00090 (same as b)
+ * after free-all + alloc(900K): huge=0x7fb87bd00020
+ * AUTO-GENERATED RUN OUTPUT END
+ */

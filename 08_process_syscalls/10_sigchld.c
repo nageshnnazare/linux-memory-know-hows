@@ -51,3 +51,18 @@ int main(void)
     printf("[parent] reaped %d children\n", reaped);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 08_process_syscalls/10_sigchld.c
+ * Command: make -C 08_process_syscalls 10_sigchld
+ * Exit status: 0
+ * Output:
+ * [parent] spawned 3706
+ * [parent] spawned 3707
+ * [parent] spawned 3708
+ * [parent] spawned 3709
+ * [parent] spawned 3710
+ * [parent] reaped 5 children
+ * AUTO-GENERATED RUN OUTPUT END
+ */

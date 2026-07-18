@@ -100,3 +100,59 @@ int main(int argc, char **argv)
     printf("  AT_EXECFN        = \"%s\"\n", (const char *)getauxval(AT_EXECFN));
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 02_process_address_space/02_environ.c
+ * Command: make -C 02_process_address_space 02_environ
+ * Exit status: 0
+ * Output:
+ * === argc / argv ===
+ * argc = 1
+ *   argv[0] = 0x7ffe22133c09 -> "./02_environ"
+ *   argv[1] = NULL
+ * 
+ * === environ ===
+ *   environ[0] = 0x7ffe22133c16 -> "SHELL=/bin/bash"
+ *   environ[1] = 0x7ffe22133c26 -> "SELENIUM_JAR_PATH=/usr/share/java/selenium-server.jar"
+ *   environ[2] = 0x7ffe22133c5c -> "CONDA=/usr/share/miniconda"
+ *   environ[3] = 0x7ffe22133c77 -> "GITHUB_WORKSPACE=/home/runner/work/linux-memory-know-hows/linux-memory-know-hows"
+ *   environ[4] = 0x7ffe22133cc8 -> "JAVA_HOME_11_X64=/usr/lib/jvm/temurin-11-jdk-amd64"
+ *   environ[5] = 0x7ffe22133cfb -> "JAVA_HOME_25_X64=/usr/lib/jvm/temurin-25-jdk-amd64"
+ *   environ[6] = 0x7ffe22133d2e -> "GITHUB_PATH=/home/runner/work/_temp/_runner_file_commands/add_path_8d84eac4-800e..."
+ *   environ[7] = 0x7ffe22133d96 -> "GITHUB_ACTION=__run_2"
+ *   environ[8] = 0x7ffe22133dac -> "JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64"
+ *   environ[9] = 0x7ffe22133dd8 -> "GITHUB_RUN_NUMBER=2"
+ *   ... 115 total entries, environ[115] = NULL
+ * 
+ * === auxv ===
+ *   AT_SYSINFO_EHDR (vDSO) (33) = 0x7fa49a51d000
+ *   AT_?                 (51) = 0x6f0
+ *   AT_HWCAP             (16) = 0x178bfbff
+ *   AT_PAGESZ            (6) = 0x1000
+ *   AT_CLKTCK            (17) = 0x64
+ *   AT_PHDR              (3) = 0x56268e1f0040
+ *   AT_PHENT             (4) = 0x38
+ *   AT_PHNUM             (5) = 0xd
+ *   AT_BASE              (7) = 0x7fa49a51f000
+ *   AT_FLAGS             (8) = 0x0
+ *   AT_ENTRY             (9) = 0x56268e1f10c0
+ *   AT_UID               (11) = 0x3e9
+ *   AT_EUID              (12) = 0x3e9
+ *   AT_GID               (13) = 0x3e9
+ *   AT_EGID              (14) = 0x3e9
+ *   AT_SECURE            (23) = 0x0
+ *   AT_RANDOM            (25) = 0x7ffe22131cf9
+ *   AT_?                 (26) = 0x2
+ *   AT_EXECFN            (31) = 0x7ffe22134feb
+ *   AT_PLATFORM          (15) = 0x7ffe22131d09
+ *   AT_?                 (27) = 0x1c
+ *   AT_?                 (28) = 0x20
+ * 
+ * === via getauxval(3) (libc helper) ===
+ *   AT_PAGESZ        = 4096
+ *   AT_BASE   (ld)   = 7fa49a51f000
+ *   AT_SYSINFO_EHDR  = 7fa49a51d000
+ *   AT_EXECFN        = "./02_environ"
+ * AUTO-GENERATED RUN OUTPUT END
+ */

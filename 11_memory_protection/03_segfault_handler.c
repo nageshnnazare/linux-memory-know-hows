@@ -51,3 +51,13 @@ int main(void)
     printf("unreachable\n");
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 11_memory_protection/03_segfault_handler.c
+ * Command: make -C 11_memory_protection 03_segfault_handler
+ * Exit status: 0
+ * Output:
+ * [handler] signal 11 at addr (nil) (errno=0 code=1)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

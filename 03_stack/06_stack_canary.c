@@ -35,3 +35,13 @@ int main(void)
     victim(bomb);    /* canary check should fire here */
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 03_stack/06_stack_canary.c
+ * Command: make -C 03_stack 06_stack_canary
+ * Exit status: 0
+ * Output:
+ * *** stack smashing detected ***: terminated
+ * AUTO-GENERATED RUN OUTPUT END
+ */

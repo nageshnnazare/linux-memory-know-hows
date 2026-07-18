@@ -37,3 +37,13 @@ int main(void)
     free(r);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 09_threads_memory/04_pthread_join.c
+ * Command: make -C 09_threads_memory 04_pthread_join
+ * Exit status: 0
+ * Output:
+ * worker(7) returned 49
+ * AUTO-GENERATED RUN OUTPUT END
+ */

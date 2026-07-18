@@ -39,3 +39,14 @@ int main(void)
         printf("child killed by signal %d\n", WTERMSIG(status));
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 08_process_syscalls/02_fork_exec_wait.c
+ * Command: make -C 08_process_syscalls 02_fork_exec_wait
+ * Exit status: 0
+ * Output:
+ * hello from child
+ * child exited with 0
+ * AUTO-GENERATED RUN OUTPUT END
+ */

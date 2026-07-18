@@ -48,3 +48,17 @@ int main(void)
     printf("oom_score_adj  = %d\n", read_int("/proc/self/oom_score_adj"));
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 07_paging_swapping/04_oom_score.c
+ * Command: make -C 07_paging_swapping 04_oom_score
+ * Exit status: 0
+ * Output:
+ * write oom_score_adj: Permission denied
+ * oom_score      = 999
+ * oom_score_adj  = 500
+ * oom_score now  = 1000
+ * oom_score_adj  = 500
+ * AUTO-GENERATED RUN OUTPUT END
+ */

@@ -43,3 +43,14 @@ int main(void)
            N, t1 - t0, (t1 - t0) * 1e9 / N);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 09_threads_memory/06_mutex_vs_atomic.c
+ * Command: make -C 09_threads_memory 06_mutex_vs_atomic
+ * Exit status: 0
+ * Output:
+ * pthread_mutex 1-thread : 50000000 ops in 0.366 s  -> 7.3 ns/op
+ * atomic_fetch_add        : 50000000 ops in 0.126 s  -> 2.5 ns/op
+ * AUTO-GENERATED RUN OUTPUT END
+ */

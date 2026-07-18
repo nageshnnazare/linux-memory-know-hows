@@ -47,3 +47,15 @@ int main(void)
     waitpid(pid, NULL, 0);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 08_process_syscalls/08_pipe_fork.c
+ * Command: make -C 08_process_syscalls 08_pipe_fork
+ * Exit status: 0
+ * Output:
+ * hello
+ * from
+ * parent
+ * AUTO-GENERATED RUN OUTPUT END
+ */

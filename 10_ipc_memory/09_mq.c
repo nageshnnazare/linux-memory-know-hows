@@ -45,3 +45,13 @@ int main(void)
     mq_unlink(name);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 10_ipc_memory/09_mq.c
+ * Command: make -C 10_ipc_memory 09_mq
+ * Exit status: 0
+ * Output:
+ * (no output)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

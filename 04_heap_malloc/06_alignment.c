@@ -55,3 +55,17 @@ int main(void)
 
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 04_heap_malloc/06_alignment.c
+ * Command: make -C 04_heap_malloc 06_alignment
+ * Exit status: 0
+ * Output:
+ * malloc(64)              = 0x56498d2122a0  16-aligned? 1  64-aligned? 0
+ * aligned_alloc(64, 128)  = 0x56498d213300  64-aligned? 1
+ * posix_memalign(4096,4K) = 0x56498d214000  page-aligned? 1
+ * memalign(32, 100)       = 0x56498d2133c0  32-aligned? 1
+ * aligned_alloc(64, 100)  = 0x56498d2133c0  (UB, may be NULL)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

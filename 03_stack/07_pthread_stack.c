@@ -67,3 +67,23 @@ int main(void)
     int local; printf("[ main ] &local         = %p\n", (void *)&local);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 03_stack/07_pthread_stack.c
+ * Command: make -C 03_stack 07_pthread_stack
+ * Exit status: 0
+ * Output:
+ * [thread 140285866669760] &local       = 0x7f96d93fee54
+ * [thread 140285866669760] stack base   = 0x7f96d8400000
+ * [thread 140285866669760] stack top    = 0x7f96d9400000
+ * [thread 140285866669760] stack size   = 16384 KiB
+ * [thread 140285866669760] guard size   = 4096 bytes
+ * [thread 140285849888448] &local       = 0x7f96d83fde54
+ * [thread 140285849888448] stack base   = 0x7f96d83bf000
+ * [thread 140285849888448] stack top    = 0x7f96d83ff000
+ * [thread 140285849888448] stack size   = 256 KiB
+ * [thread 140285849888448] guard size   = 4096 bytes
+ * [ main ] &local         = 0x7ffe602af62c
+ * AUTO-GENERATED RUN OUTPUT END
+ */

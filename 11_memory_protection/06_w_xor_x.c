@@ -45,3 +45,13 @@ int main(void)
     printf("never reached\n");
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 11_memory_protection/06_w_xor_x.c
+ * Command: make -C 11_memory_protection 06_w_xor_x
+ * Exit status: 0
+ * Output:
+ * SIGSEGV: attempted to execute non-X page 0x7ff9beabb000
+ * AUTO-GENERATED RUN OUTPUT END
+ */

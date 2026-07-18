@@ -27,3 +27,13 @@ int main(void)
     printf("second free? unreachable\n");
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 04_heap_malloc/10_double_free.c
+ * Command: make -C 04_heap_malloc 10_double_free
+ * Exit status: 0
+ * Output:
+ * free(): double free detected in tcache 2
+ * AUTO-GENERATED RUN OUTPUT END
+ */

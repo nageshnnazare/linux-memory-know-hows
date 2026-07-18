@@ -48,3 +48,16 @@ int main(void)
     close(fd);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 10_ipc_memory/06_memfd_create.c
+ * Command: make -C 10_ipc_memory 06_memfd_create
+ * Exit status: 0
+ * Output:
+ * F_ADD_SEALS (need MFD_ALLOW_SEALING): Device or resource busy
+ * memfd_create fd = 3  (look in /proc/3883/fd/3)
+ * via mmap: "hello memfd!"
+ * current seals = 0x0
+ * AUTO-GENERATED RUN OUTPUT END
+ */

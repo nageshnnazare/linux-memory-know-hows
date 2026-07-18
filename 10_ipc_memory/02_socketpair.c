@@ -39,3 +39,13 @@ int main(void)
     waitpid(pid, NULL, 0);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 10_ipc_memory/02_socketpair.c
+ * Command: make -C 10_ipc_memory 02_socketpair
+ * Exit status: 0
+ * Output:
+ * [parent] got pong
+ * AUTO-GENERATED RUN OUTPUT END
+ */

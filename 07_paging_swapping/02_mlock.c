@@ -47,3 +47,17 @@ int main(void)
     free(p);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 07_paging_swapping/02_mlock.c
+ * Command: make -C 07_paging_swapping 02_mlock
+ * Exit status: 0
+ * Output:
+ * RLIMIT_MEMLOCK soft=8388608 hard=8388608 (bytes)
+ * [start               ] VmLck=0 KiB  VmRSS=1488 KiB
+ * [after malloc+touch  ] VmLck=0 KiB  VmRSS=1648 KiB
+ * [after mlock         ] VmLck=36 KiB  VmRSS=1648 KiB
+ * [after munlock       ] VmLck=0 KiB  VmRSS=1648 KiB
+ * AUTO-GENERATED RUN OUTPUT END
+ */

@@ -85,3 +85,14 @@ int main(void)
     waitpid(pid, NULL, 0);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 10_ipc_memory/10_scm_rights.c
+ * Command: make -C 10_ipc_memory 10_scm_rights
+ * Exit status: 0
+ * Output:
+ * runnervm3jd5f
+ * [parent] passing fd=4 (/etc/hostname) to child
+ * AUTO-GENERATED RUN OUTPUT END
+ */

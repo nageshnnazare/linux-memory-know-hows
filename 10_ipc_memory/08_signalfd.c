@@ -33,3 +33,13 @@ int main(void)
     close(sfd);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 10_ipc_memory/08_signalfd.c
+ * Command: make -C 10_ipc_memory 08_signalfd
+ * Exit status: 0
+ * Output:
+ * (no output)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

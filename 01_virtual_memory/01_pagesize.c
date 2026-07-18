@@ -41,3 +41,16 @@ int main(void)
     munmap(p, 1);  /* munmap also rounds up; the whole page is gone */
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 01_virtual_memory/01_pagesize.c
+ * Command: make -C 01_virtual_memory 01_pagesize
+ * Exit status: 0
+ * Output:
+ * page size = 4096 (sysconf)
+ * page size = 4096 (getpagesize)
+ * mmap'd 1 byte at 0x7f9799002000 (page-aligned? yes)
+ * wrote p[0]=a, p[4095]=z   (still in page)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

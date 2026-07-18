@@ -73,3 +73,16 @@ int main(void)
     arena_destroy(&a);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 14_putting_it_together/01_bump.c
+ * Command: make -C 14_putting_it_together 01_bump
+ * Exit status: 0
+ * Output:
+ * s1=0x7f0428800000 "hello world!"
+ * s2=0x7f0428800010 (B..B)
+ * ai[999]=999  used=4128 bytes
+ * after reset: used=0
+ * AUTO-GENERATED RUN OUTPUT END
+ */

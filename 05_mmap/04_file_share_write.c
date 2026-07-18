@@ -43,3 +43,14 @@ int main(void)
     unlink(path);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 05_mmap/04_file_share_write.c
+ * Command: make -C 05_mmap 04_file_share_write
+ * Exit status: 0
+ * Output:
+ * before: AAAAAAAAAAAAAAAA
+ * on disk : BBBBBBBBAAAAAAAA
+ * AUTO-GENERATED RUN OUTPUT END
+ */

@@ -92,3 +92,13 @@ int main(void)
     close(ufd);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 13_advanced/03_userfaultfd.c
+ * Command: make -C 13_advanced 03_userfaultfd
+ * Exit status: 0
+ * Output:
+ * userfaultfd: Operation not permitted
+ * AUTO-GENERATED RUN OUTPUT END
+ */

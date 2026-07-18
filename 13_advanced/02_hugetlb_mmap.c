@@ -34,3 +34,13 @@ int main(void)
     munmap(p, len);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 13_advanced/02_hugetlb_mmap.c
+ * Command: make -C 13_advanced 02_hugetlb_mmap
+ * Exit status: 0
+ * Output:
+ * mmap(HUGETLB) -- need nr_hugepages>0: Cannot allocate memory
+ * AUTO-GENERATED RUN OUTPUT END
+ */

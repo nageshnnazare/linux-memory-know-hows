@@ -35,3 +35,16 @@ int main(void)
     for (int i = 0; i < 3; ++i) pthread_join(t[i], NULL);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 09_threads_memory/01_pthread_create.c
+ * Command: make -C 09_threads_memory 01_pthread_create
+ * Exit status: 0
+ * Output:
+ * main      tid=3723 &local=0x7ffecdb0e29c
+ * thread #0 tid=3724 &local=0x7f0affffee4c stack=[0x7f0aff000000..0x7f0b00000000) (16384 KiB)
+ * thread #1 tid=3725 &local=0x7f0afeffde4c stack=[0x7f0afdfff000..0x7f0afefff000) (16384 KiB)
+ * thread #2 tid=3726 &local=0x7f0afdffce4c stack=[0x7f0afcffe000..0x7f0afdffe000) (16384 KiB)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

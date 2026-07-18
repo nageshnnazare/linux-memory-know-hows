@@ -47,3 +47,13 @@ int main(void)
     munmap(p, 4096);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 05_mmap/03_shared_mmap.c
+ * Command: make -C 05_mmap 03_shared_mmap
+ * Exit status: 0
+ * Output:
+ * [parent] done
+ * AUTO-GENERATED RUN OUTPUT END
+ */

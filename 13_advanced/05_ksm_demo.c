@@ -37,3 +37,13 @@ int main(void)
     munmap(a, len); munmap(b, len);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 13_advanced/05_ksm_demo.c
+ * Command: make -C 13_advanced 05_ksm_demo
+ * Exit status: 0
+ * Output:
+ * (no output)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

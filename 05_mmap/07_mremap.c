@@ -40,3 +40,15 @@ int main(void)
     munmap(r, c);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 05_mmap/07_mremap.c
+ * Command: make -C 05_mmap 07_mremap
+ * Exit status: 0
+ * Output:
+ * mmap'd 1048576 bytes @ 0x7f8ff6700000; first 6 bytes = "marker"
+ * mremap 1048576 -> 16777216  new=0x7f8ff5600000 (moved)  marker="marker"
+ * mremap 16777216 -> 65536  new=0x7f8ff5600000 marker="marker"
+ * AUTO-GENERATED RUN OUTPUT END
+ */

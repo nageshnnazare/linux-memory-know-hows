@@ -49,3 +49,13 @@ int main(void)
     munmap(p, pg);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 11_memory_protection/01_mprotect_jit.c
+ * Command: make -C 11_memory_protection 01_mprotect_jit
+ * Exit status: 0
+ * Output:
+ * JIT'd f(3,4) = 7
+ * AUTO-GENERATED RUN OUTPUT END
+ */

@@ -34,3 +34,18 @@ int main(void)
     /* htonl/ntohl exist for exactly this reason -- network byte order is BE. */
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 00_fundamentals/03_endianness.c
+ * Command: make -C 00_fundamentals 03_endianness
+ * Exit status: 0
+ * Output:
+ * uint32_t x = 0x11223344 at 0x7ffe27ba6ca4
+ *   byte at +0 = 0x44
+ *   byte at +1 = 0x33
+ *   byte at +2 = 0x22
+ *   byte at +3 = 0x11
+ * => LITTLE endian
+ * AUTO-GENERATED RUN OUTPUT END
+ */

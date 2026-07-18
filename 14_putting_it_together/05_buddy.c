@@ -116,3 +116,25 @@ int main(void)
     buddy_free(c, 8);           puts("free c"); dump();
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 14_putting_it_together/05_buddy.c
+ * Command: make -C 14_putting_it_together 05_buddy
+ * Exit status: 0
+ * Output:
+ * free lists:  order=0:0  order=1:0  order=2:0  order=3:0  order=4:0  order=5:0  order=6:0  order=7:0  order=8:1
+ * alloc 3 pages -> 0x7efdea100000
+ * free lists:  order=0:0  order=1:0  order=2:1  order=3:1  order=4:1  order=5:1  order=6:1  order=7:1  order=8:0
+ * alloc 1 page  -> 0x7efdea104000
+ * free lists:  order=0:1  order=1:1  order=2:0  order=3:1  order=4:1  order=5:1  order=6:1  order=7:1  order=8:0
+ * alloc 8 pages -> 0x7efdea108000
+ * free lists:  order=0:1  order=1:1  order=2:0  order=3:0  order=4:1  order=5:1  order=6:1  order=7:1  order=8:0
+ * free a
+ * free lists:  order=0:1  order=1:1  order=2:1  order=3:0  order=4:1  order=5:1  order=6:1  order=7:1  order=8:0
+ * free b
+ * free lists:  order=0:0  order=1:0  order=2:0  order=3:1  order=4:1  order=5:1  order=6:1  order=7:1  order=8:0
+ * free c
+ * free lists:  order=0:0  order=1:0  order=2:0  order=3:0  order=4:0  order=5:0  order=6:0  order=7:0  order=8:1
+ * AUTO-GENERATED RUN OUTPUT END
+ */

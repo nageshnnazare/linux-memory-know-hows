@@ -54,3 +54,72 @@ int main(void)
     malloc_stats();
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 04_heap_malloc/05_mallinfo.c
+ * Command: make -C 04_heap_malloc 05_mallinfo
+ * Exit status: 0
+ * Output:
+ * 
+ * === malloc_stats() to stderr ===
+ * Arena 0:
+ * system bytes     =     135168
+ * in use bytes     =       5776
+ * Total (incl. mmap):
+ * system bytes     =     135168
+ * in use bytes     =       5776
+ * max mmap regions =          1
+ * max mmap bytes   =    8392704
+ * [start]
+ *   arena    =          0 B  (heap from sbrk)
+ *   hblks    =          0     (# mmap allocs)
+ *   hblkhd   =          0 B  (bytes in mmap allocs)
+ *   uordblks =          0 B  (in-use)
+ *   fordblks =          0 B  (free in heap)
+ *   fsmblks  =          0 B  (in fastbins)
+ *   ordblks  =          1     (# free chunks)
+ *   smblks   =          0     (# fastbin chunks)
+ *   keepcost =          0 B  (top chunk; releasable)
+ * [after 100x malloc(128)]
+ *   arena    =     135168 B  (heap from sbrk)
+ *   hblks    =          0     (# mmap allocs)
+ *   hblkhd   =          0 B  (bytes in mmap allocs)
+ *   uordblks =      19168 B  (in-use)
+ *   fordblks =     116000 B  (free in heap)
+ *   fsmblks  =          0 B  (in fastbins)
+ *   ordblks  =          1     (# free chunks)
+ *   smblks   =          0     (# fastbin chunks)
+ *   keepcost =     116000 B  (top chunk; releasable)
+ * [after 100x free]
+ *   arena    =     135168 B  (heap from sbrk)
+ *   hblks    =          0     (# mmap allocs)
+ *   hblkhd   =          0 B  (bytes in mmap allocs)
+ *   uordblks =       5776 B  (in-use)
+ *   fordblks =     129392 B  (free in heap)
+ *   fsmblks  =          0 B  (in fastbins)
+ *   ordblks  =          1     (# free chunks)
+ *   smblks   =          0     (# fastbin chunks)
+ *   keepcost =     129392 B  (top chunk; releasable)
+ * [after malloc(8 MiB)]
+ *   arena    =     135168 B  (heap from sbrk)
+ *   hblks    =          1     (# mmap allocs)
+ *   hblkhd   =    8392704 B  (bytes in mmap allocs)
+ *   uordblks =       5776 B  (in-use)
+ *   fordblks =     129392 B  (free in heap)
+ *   fsmblks  =          0 B  (in fastbins)
+ *   ordblks  =          1     (# free chunks)
+ *   smblks   =          0     (# fastbin chunks)
+ *   keepcost =     129392 B  (top chunk; releasable)
+ * [after free(big)]
+ *   arena    =     135168 B  (heap from sbrk)
+ *   hblks    =          0     (# mmap allocs)
+ *   hblkhd   =          0 B  (bytes in mmap allocs)
+ *   uordblks =       5776 B  (in-use)
+ *   fordblks =     129392 B  (free in heap)
+ *   fsmblks  =          0 B  (in fastbins)
+ *   ordblks  =          1     (# free chunks)
+ *   smblks   =          0     (# fastbin chunks)
+ *   keepcost =     129392 B  (top chunk; releasable)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

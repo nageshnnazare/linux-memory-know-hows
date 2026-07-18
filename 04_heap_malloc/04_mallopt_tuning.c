@@ -46,3 +46,17 @@ int main(void)
     show("after trim");
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 04_heap_malloc/04_mallopt_tuning.c
+ * Command: make -C 04_heap_malloc 04_mallopt_tuning
+ * Exit status: 0
+ * Output:
+ * [start       ] arena=0 hblks=0 hblkhd=0  uordblks=0  fordblks=0
+ * [after mmap_thr=4K] arena=135168 hblks=0 hblkhd=0  uordblks=4768  fordblks=130400
+ * [after big mallocs] arena=135168 hblks=7 hblkhd=487424  uordblks=70320  fordblks=64848
+ * [after free  ] arena=135168 hblks=0 hblkhd=0  uordblks=4768  fordblks=130400
+ * [after trim  ] arena=8192 hblks=0 hblkhd=0  uordblks=4816  fordblks=3376
+ * AUTO-GENERATED RUN OUTPUT END
+ */

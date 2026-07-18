@@ -69,3 +69,16 @@ int main(void)
     munmap(p, BYTES);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 01_virtual_memory/03_count_page_faults.c
+ * Command: make -C 01_virtual_memory 03_count_page_faults
+ * Exit status: 0
+ * Output:
+ * mmap (no touch)         minor=0         major=0  
+ * write each page         minor=135       major=0  
+ * re-read each page       minor=0         major=0  
+ * DONTNEED + re-read      minor=128       major=0  
+ * AUTO-GENERATED RUN OUTPUT END
+ */

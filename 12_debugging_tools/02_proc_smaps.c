@@ -33,3 +33,17 @@ int main(void)
     printf("Private_Clean = %8ld KiB  (can be dropped freely)\n", priv_clean);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 12_debugging_tools/02_proc_smaps.c
+ * Command: make -C 12_debugging_tools 02_proc_smaps
+ * Exit status: 0
+ * Output:
+ * RSS           =     1612 KiB
+ * PSS           =      153 KiB  (your fair share)
+ * Swap          =        0 KiB
+ * Private_Dirty =      100 KiB  (would survive across exec)
+ * Private_Clean =       12 KiB  (can be dropped freely)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

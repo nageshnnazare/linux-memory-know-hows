@@ -147,3 +147,14 @@ int main(void)
            N, sum, (N * (N - 1)) / 2);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 14_putting_it_together/03_slab.c
+ * Command: make -C 14_putting_it_together 03_slab
+ * Exit status: 0
+ * Output:
+ * slab=32 KiB, obj=64 B, objs/slab=511
+ * alloc/free 10000 Obj OK; sum of ids = 49995000 (expected 49995000)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

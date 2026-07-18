@@ -23,3 +23,13 @@ int main(void)
     f("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");  // overflow
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 11_memory_protection/04_canary_demo.c
+ * Command: make -C 11_memory_protection 04_canary_demo
+ * Exit status: 0
+ * Output:
+ * *** stack smashing detected ***: terminated
+ * AUTO-GENERATED RUN OUTPUT END
+ */

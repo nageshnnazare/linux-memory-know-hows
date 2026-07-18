@@ -71,3 +71,29 @@ int main(void)
     for (size_t i = 0; i < sizeof rls / sizeof *rls; ++i) print_one(&rls[i]);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 02_process_address_space/05_rlimit.c
+ * Command: make -C 02_process_address_space 05_rlimit
+ * Exit status: 0
+ * Output:
+ * === getrlimit() snapshot ===
+ *   RLIMIT_AS           soft=unlimited       hard=unlimited        (bytes)
+ *   RLIMIT_CORE         soft=0               hard=unlimited        (bytes)
+ *   RLIMIT_CPU          soft=unlimited       hard=unlimited        (sec)
+ *   RLIMIT_DATA         soft=unlimited       hard=unlimited        (bytes)
+ *   RLIMIT_FSIZE        soft=unlimited       hard=unlimited        (bytes)
+ *   RLIMIT_MEMLOCK      soft=8388608         hard=8388608          (bytes)
+ *   RLIMIT_NOFILE       soft=65536           hard=65536            (fds)
+ *   RLIMIT_NPROC        soft=63838           hard=63838            (procs)
+ *   RLIMIT_RSS          soft=unlimited       hard=unlimited        (bytes (legacy))
+ *   RLIMIT_STACK        soft=16777216        hard=unlimited        (bytes)
+ *   RLIMIT_LOCKS        soft=unlimited       hard=unlimited        (count)
+ *   RLIMIT_MSGQUEUE     soft=819200          hard=819200           (bytes)
+ *   RLIMIT_NICE         soft=0               hard=0                (0..40)
+ *   RLIMIT_RTPRIO       soft=0               hard=0                (0..99)
+ *   RLIMIT_RTTIME       soft=unlimited       hard=unlimited        (us)
+ *   RLIMIT_SIGPENDING   soft=63838           hard=63838            (count)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

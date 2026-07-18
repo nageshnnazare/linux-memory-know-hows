@@ -21,3 +21,13 @@ int main(int argc, char **argv)
     printf("buf=%s\n", buf);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 11_memory_protection/05_fortify_demo.c
+ * Command: make -C 11_memory_protection 05_fortify_demo
+ * Exit status: 0
+ * Output:
+ * *** buffer overflow detected ***: terminated
+ * AUTO-GENERATED RUN OUTPUT END
+ */

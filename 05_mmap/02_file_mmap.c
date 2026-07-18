@@ -56,3 +56,18 @@ int main(void)
     unlink(path);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 05_mmap/02_file_mmap.c
+ * Command: make -C 05_mmap 02_file_mmap
+ * Exit status: 0
+ * Output:
+ * file size = 25 bytes  mapped @ 0x7fa811583000
+ * hello mmap'd file world!
+ * after p[0]='H' in memory: "Hello mmap'd file world!
+ * "
+ * on disk still: "hello mmap'd file world!
+ * "
+ * AUTO-GENERATED RUN OUTPUT END
+ */

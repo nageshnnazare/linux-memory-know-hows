@@ -51,3 +51,13 @@ int main(void)
     shm_unlink(name);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 10_ipc_memory/04_shm_open.c
+ * Command: make -C 10_ipc_memory 04_shm_open
+ * Exit status: 0
+ * Output:
+ * (no output)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

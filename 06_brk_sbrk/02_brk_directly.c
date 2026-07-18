@@ -35,3 +35,16 @@ int main(void)
     printf("new break = %p (should equal initial)\n", sbrk(0));
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 06_brk_sbrk/02_brk_directly.c
+ * Command: make -C 06_brk_sbrk 02_brk_directly
+ * Exit status: 0
+ * Output:
+ * initial break = 0x5651f35b6000
+ * got 16 KiB from sbrk; old break = 0x5651f35d7000, new break = 0x5651f35db000
+ * wrote 16 KiB starting at 0x5651f35d7000
+ * new break = 0x5651f35d7000 (should equal initial)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

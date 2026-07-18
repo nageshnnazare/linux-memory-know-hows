@@ -47,3 +47,18 @@ int main(void)
     free(q);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 04_heap_malloc/07_calloc_realloc.c
+ * Command: make -C 04_heap_malloc 07_calloc_realloc
+ * Exit status: 0
+ * Output:
+ * calloc(8,1) = 0x562370c5b2a0  contents: 00 00 00 00...
+ * calloc(huge,4) = (nil) (NULL expected)
+ * before realloc: p=0x562370c5b2a0 "1234567"
+ * after realloc(16): p=0x562370c5b2a0 "1234567"
+ * after realloc(8 MiB): p=0x7f9835fff010 "1234567"
+ * realloc(NULL,32) = 0x562370c5c2d0
+ * AUTO-GENERATED RUN OUTPUT END
+ */

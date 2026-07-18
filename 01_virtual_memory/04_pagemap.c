@@ -79,3 +79,18 @@ int main(void)
     free(heap); munmap(anon, 4096);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 01_virtual_memory/04_pagemap.c
+ * Command: make -C 01_virtual_memory 04_pagemap
+ * Exit status: 0
+ * Output:
+ * stack                   va=0x7ffc181f2344  present=1 swap=0 filebak=0 excl=1  pfn=0x0
+ * bss                     va=0x563091fa7018  present=1 swap=0 filebak=0 excl=1  pfn=0x0
+ * data                    va=0x563091fa7010  present=1 swap=0 filebak=0 excl=1  pfn=0x0
+ * malloc heap             va=0x5630b671b2a0  present=1 swap=0 filebak=0 excl=1  pfn=0x0
+ * mmap anon               va=0x7f06c81df000  present=1 swap=0 filebak=0 excl=1  pfn=0x0
+ * text (main)             va=0x563091fa4439  present=1 swap=0 filebak=1 excl=1  pfn=0x0
+ * AUTO-GENERATED RUN OUTPUT END
+ */

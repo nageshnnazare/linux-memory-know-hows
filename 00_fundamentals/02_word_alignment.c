@@ -65,3 +65,35 @@ int main(void)
     printf("\nstruct good (reordered): sizeof=%zu\n", sizeof(struct good));
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 00_fundamentals/02_word_alignment.c
+ * Command: make -C 00_fundamentals 02_word_alignment
+ * Exit status: 0
+ * Output:
+ * Type sizes on this machine:
+ *   char       = 1  align=1
+ *   short      = 2  align=2
+ *   int        = 4  align=4
+ *   long       = 8  align=8
+ *   long long  = 8  align=8
+ *   void *     = 8  align=8
+ *   float      = 4  align=4
+ *   double     = 8  align=8
+ *   long double= 16  align=16
+ *   max_align_t= 16
+ * 
+ * struct s (default layout): sizeof=12 align=4
+ *   offsetof(a) = 0
+ *   offsetof(b) = 4
+ *   offsetof(c) = 8
+ * 
+ * struct packed (no padding): sizeof=6 align=1
+ *   offsetof(a) = 0
+ *   offsetof(b) = 1
+ *   offsetof(c) = 5
+ * 
+ * struct good (reordered): sizeof=8
+ * AUTO-GENERATED RUN OUTPUT END
+ */

@@ -42,3 +42,17 @@ int main(void)
     close(efd);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 10_ipc_memory/07_eventfd.c
+ * Command: make -C 10_ipc_memory 07_eventfd
+ * Exit status: 0
+ * Output:
+ * woke up: got count 1
+ * woke up: got count 1
+ * woke up: got count 1
+ * woke up: got count 1
+ * woke up: got count 1
+ * AUTO-GENERATED RUN OUTPUT END
+ */

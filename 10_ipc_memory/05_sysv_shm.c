@@ -47,3 +47,13 @@ int main(void)
     shmctl(id, IPC_RMID, NULL);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 10_ipc_memory/05_sysv_shm.c
+ * Command: make -C 10_ipc_memory 05_sysv_shm
+ * Exit status: 0
+ * Output:
+ * (no output)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

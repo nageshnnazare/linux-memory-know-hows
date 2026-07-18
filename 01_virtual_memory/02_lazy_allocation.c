@@ -73,3 +73,18 @@ int main(void)
     show("after munmap");
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 01_virtual_memory/02_lazy_allocation.c
+ * Command: make -C 01_virtual_memory 02_lazy_allocation
+ * Exit status: 0
+ * Output:
+ * [start          ] VmSize=  2692 KiB  VmRSS=  1360 KiB  minflt=60    majflt=0
+ * [after mmap     ] VmSize=1051268 KiB  VmRSS=  1620 KiB  minflt=61    majflt=0
+ * [after reads    ] VmSize=1051268 KiB  VmRSS=  1620 KiB  minflt=573   majflt=0
+ * [after writes   ] VmSize=1051268 KiB  VmRSS=1050776 KiB  minflt=1085  majflt=0
+ * [after DONTNEED ] VmSize=1051268 KiB  VmRSS=  2200 KiB  minflt=1085  majflt=0
+ * [after munmap   ] VmSize=  2692 KiB  VmRSS=  2200 KiB  minflt=1085  majflt=0
+ * AUTO-GENERATED RUN OUTPUT END
+ */

@@ -46,3 +46,17 @@ int main(void)
     munmap(p, len);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 05_mmap/06_madvise_dontneed.c
+ * Command: make -C 05_mmap 06_madvise_dontneed
+ * Exit status: 0
+ * Output:
+ * after mmap        : RSS = 1360 KiB
+ * after memset      : RSS = 263764 KiB
+ * after DONTNEED    : RSS = 1620 KiB
+ * p[0]=0 (zeroed)  p[1MB]=0
+ * after one read    : RSS = 1620 KiB (zero page mapped RO)
+ * AUTO-GENERATED RUN OUTPUT END
+ */

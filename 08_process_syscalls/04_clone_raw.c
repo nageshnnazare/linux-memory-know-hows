@@ -46,3 +46,13 @@ int main(void)
     munmap(stk, STK);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 08_process_syscalls/04_clone_raw.c
+ * Command: make -C 08_process_syscalls 04_clone_raw
+ * Exit status: 0
+ * Output:
+ * [parent] child returned 42
+ * AUTO-GENERATED RUN OUTPUT END
+ */

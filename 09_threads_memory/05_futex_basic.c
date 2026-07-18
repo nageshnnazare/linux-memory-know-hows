@@ -69,3 +69,13 @@ int main(void)
     printf("shared=%ld expected=%ld\n", shared, (long)(2 * N));
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 09_threads_memory/05_futex_basic.c
+ * Command: make -C 09_threads_memory 05_futex_basic
+ * Exit status: 0
+ * Output:
+ * shared=200000 expected=200000
+ * AUTO-GENERATED RUN OUTPUT END
+ */

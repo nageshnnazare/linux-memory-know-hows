@@ -46,3 +46,13 @@ int main(int argc, char **argv)
     }
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 08_process_syscalls/09_zombie_orphan.c
+ * Command: make -C 08_process_syscalls 09_zombie_orphan
+ * Exit status: 0
+ * Output:
+ * usage: ./09_zombie_orphan zombie|orphan
+ * AUTO-GENERATED RUN OUTPUT END
+ */

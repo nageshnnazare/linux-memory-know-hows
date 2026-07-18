@@ -30,3 +30,15 @@ int main(void)
     waitpid(pid, NULL, 0);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 10_ipc_memory/01_pipe.c
+ * Command: make -C 10_ipc_memory 01_pipe
+ * Exit status: 0
+ * Output:
+ * record 0
+ * record 1
+ * record 2
+ * AUTO-GENERATED RUN OUTPUT END
+ */

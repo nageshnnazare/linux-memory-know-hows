@@ -37,3 +37,16 @@ int main(void)
     printf("main counter=%d\n", counter);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 09_threads_memory/02_tls_compiler.c
+ * Command: make -C 09_threads_memory 02_tls_compiler
+ * Exit status: 0
+ * Output:
+ * tid=3740 counter=10 (&counter=0x7fc37b1ff6bc)
+ * tid=3741 counter=20 (&counter=0x7fc37a1fe6bc)
+ * tid=3742 counter=30 (&counter=0x7fc370fff6bc)
+ * main counter=100
+ * AUTO-GENERATED RUN OUTPUT END
+ */

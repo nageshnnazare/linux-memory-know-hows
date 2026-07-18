@@ -46,3 +46,14 @@ int main(void)
     printf("after clobber:      \"%s\"\n", p);  /* probably garbage */
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 03_stack/05_dangling_local.c
+ * Command: make -C 03_stack 05_dangling_local
+ * Exit status: 0
+ * Output:
+ * right after return: "(null)"
+ * after clobber:      "(null)"
+ * AUTO-GENERATED RUN OUTPUT END
+ */

@@ -57,3 +57,37 @@ int main(void)
     malloc_stats();   /* shows N arenas if more than one was used */
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 04_heap_malloc/08_arenas_threads.c
+ * Command: make -C 04_heap_malloc 08_arenas_threads
+ * Exit status: 0
+ * Output:
+ * Arena 0:
+ * system bytes     =     135168
+ * in use bytes     =       8592
+ * Arena 1:
+ * system bytes     =     135168
+ * in use bytes     =       2256
+ * Arena 2:
+ * system bytes     =     135168
+ * in use bytes     =       2256
+ * Arena 3:
+ * system bytes     =     135168
+ * in use bytes     =       2256
+ * Arena 4:
+ * system bytes     =     135168
+ * in use bytes     =       2256
+ * Arena 5:
+ * system bytes     =     135168
+ * in use bytes     =       2256
+ * Total (incl. mmap):
+ * system bytes     =     811008
+ * in use bytes     =      19872
+ * max mmap regions =          0
+ * max mmap bytes   =          0
+ * [start] anonymous VMAs=9  file-backed VMAs=15
+ * [after threads] anonymous VMAs=23  file-backed VMAs=15
+ * AUTO-GENERATED RUN OUTPUT END
+ */

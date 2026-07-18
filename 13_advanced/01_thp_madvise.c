@@ -47,3 +47,14 @@ int main(void)
     munmap(p, len);
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 13_advanced/01_thp_madvise.c
+ * Command: make -C 13_advanced 01_thp_madvise
+ * Exit status: 0
+ * Output:
+ * 7fe08d200000-7fe091200000 rw-p 00000000 00:00 0 
+ * Size:              65536 kB
+ * AUTO-GENERATED RUN OUTPUT END
+ */

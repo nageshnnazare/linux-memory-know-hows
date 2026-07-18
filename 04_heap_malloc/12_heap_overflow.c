@@ -37,3 +37,13 @@ int main(void)
     puts("survived (some glibc versions only catch this at coalesce time)");
     return 0;
 }
+
+/*
+ * AUTO-GENERATED RUN OUTPUT START
+ * Source: 04_heap_malloc/12_heap_overflow.c
+ * Command: make -C 04_heap_malloc 12_heap_overflow
+ * Exit status: 0
+ * Output:
+ * double free or corruption (out)
+ * AUTO-GENERATED RUN OUTPUT END
+ */
