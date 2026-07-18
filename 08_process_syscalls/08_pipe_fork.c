@@ -49,6 +49,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 08_process_syscalls/08_pipe_fork.c
  * Command: make -C 08_process_syscalls 08_pipe_fork

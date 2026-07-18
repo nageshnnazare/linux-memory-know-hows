@@ -94,6 +94,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 13_advanced/03_userfaultfd.c
  * Command: make -C 13_advanced 03_userfaultfd

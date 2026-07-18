@@ -45,6 +45,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 05_mmap/04_file_share_write.c
  * Command: make -C 05_mmap 04_file_share_write

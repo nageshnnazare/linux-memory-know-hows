@@ -23,11 +23,14 @@ int main(int argc, char **argv)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 11_memory_protection/02_aslr_test.c
  * Command: make -C 11_memory_protection 02_aslr_test
  * Exit status: 0
  * Output:
- * text  = 0x55d1882a7199   stack = 0x7ffc9455e92c   heap = 0x55d194a9e2a0   libc = 0x7efd05e60100   argv = 0x7ffc9455ea68
+ * text  = 0x563bdf77f199   stack = 0x7fff80f95d6c   heap = 0x563be81592a0   libc = 0x7f5826a60100   argv = 0x7fff80f95ea8
  * AUTO-GENERATED RUN OUTPUT END
  */

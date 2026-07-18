@@ -39,6 +39,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 13_advanced/05_ksm_demo.c
  * Command: make -C 13_advanced 05_ksm_demo

@@ -106,6 +106,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 00_fundamentals/01_memory_hierarchy.c
  * Command: make -C 00_fundamentals 01_memory_hierarchy
@@ -113,12 +116,12 @@ int main(void)
  * Output:
  * size          ns/access 
  * ----          ----------
- *    16 KiB        1.76
- *    64 KiB        3.79
- *   256 KiB        4.92
- *     1 MiB        9.02
- *     8 MiB       17.80
- *    64 MiB      100.97
- *   256 MiB      134.16
+ *    16 KiB        1.56
+ *    64 KiB        2.95
+ *   256 KiB        3.83
+ *     1 MiB       12.07
+ *     8 MiB       14.92
+ *    64 MiB       80.87
+ *   256 MiB       99.31
  * AUTO-GENERATED RUN OUTPUT END
  */

@@ -36,12 +36,15 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 00_fundamentals/03_endianness.c
  * Command: make -C 00_fundamentals 03_endianness
  * Exit status: 0
  * Output:
- * uint32_t x = 0x11223344 at 0x7ffe27ba6ca4
+ * uint32_t x = 0x11223344 at 0x7ffcf118d224
  *   byte at +0 = 0x44
  *   byte at +1 = 0x33
  *   byte at +2 = 0x22

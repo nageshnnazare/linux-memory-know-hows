@@ -71,6 +71,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 01_virtual_memory/03_count_page_faults.c
  * Command: make -C 01_virtual_memory 03_count_page_faults

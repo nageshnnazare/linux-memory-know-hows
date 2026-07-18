@@ -26,20 +26,23 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 03_stack/01_stack_growth.c
  * Command: make -C 03_stack 01_stack_growth
  * Exit status: 0
  * Output:
- * main &top = 0x7ffd16a5b924 (top of our journey)
- * depth= 0  &local=0x7ffd16a5b8fc  (delta=40 bytes from caller)
- * depth= 1  &local=0x7ffd16a5b8bc  (delta=64 bytes from caller)
- * depth= 2  &local=0x7ffd16a5b87c  (delta=64 bytes from caller)
- * depth= 3  &local=0x7ffd16a5b83c  (delta=64 bytes from caller)
- * depth= 4  &local=0x7ffd16a5b7fc  (delta=64 bytes from caller)
- * depth= 5  &local=0x7ffd16a5b7bc  (delta=64 bytes from caller)
- * depth= 6  &local=0x7ffd16a5b77c  (delta=64 bytes from caller)
- * depth= 7  &local=0x7ffd16a5b73c  (delta=64 bytes from caller)
- * depth= 8  &local=0x7ffd16a5b6fc  (delta=64 bytes from caller)
+ * main &top = 0x7ffdbe3dd8c4 (top of our journey)
+ * depth= 0  &local=0x7ffdbe3dd89c  (delta=40 bytes from caller)
+ * depth= 1  &local=0x7ffdbe3dd85c  (delta=64 bytes from caller)
+ * depth= 2  &local=0x7ffdbe3dd81c  (delta=64 bytes from caller)
+ * depth= 3  &local=0x7ffdbe3dd7dc  (delta=64 bytes from caller)
+ * depth= 4  &local=0x7ffdbe3dd79c  (delta=64 bytes from caller)
+ * depth= 5  &local=0x7ffdbe3dd75c  (delta=64 bytes from caller)
+ * depth= 6  &local=0x7ffdbe3dd71c  (delta=64 bytes from caller)
+ * depth= 7  &local=0x7ffdbe3dd6dc  (delta=64 bytes from caller)
+ * depth= 8  &local=0x7ffdbe3dd69c  (delta=64 bytes from caller)
  * AUTO-GENERATED RUN OUTPUT END
  */

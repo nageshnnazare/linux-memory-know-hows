@@ -25,6 +25,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 11_memory_protection/04_canary_demo.c
  * Command: make -C 11_memory_protection 04_canary_demo

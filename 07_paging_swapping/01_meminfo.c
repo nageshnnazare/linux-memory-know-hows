@@ -51,28 +51,31 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 07_paging_swapping/01_meminfo.c
  * Command: make -C 07_paging_swapping 01_meminfo
  * Exit status: 0
  * Output:
- *   MemTotal:       16373456 kB                         -- total usable RAM
- *   MemFree:        13990028 kB                         -- untouched RAM (on buddy free lists)
- *   MemAvailable:   15282792 kB                         -- what userspace could allocate without swap
- *   Buffers:           72208 kB                         -- page cache for raw block devices
- *   Cached:          1496904 kB                         -- page cache for files (mmap + read)
+ *   MemTotal:       16373460 kB                         -- total usable RAM
+ *   MemFree:        14045832 kB                         -- untouched RAM (on buddy free lists)
+ *   MemAvailable:   15343612 kB                         -- what userspace could allocate without swap
+ *   Buffers:           72104 kB                         -- page cache for raw block devices
+ *   Cached:          1502612 kB                         -- page cache for files (mmap + read)
  *   SwapTotal:       3145724 kB                         -- size of swap
  *   SwapFree:        3145724 kB                         -- unused swap
- *   Dirty:             10104 kB                         -- dirty pages (not yet written back)
+ *   Dirty:              3660 kB                         -- dirty pages (not yet written back)
  *   Writeback:             0 kB                         -- pages being written back now
- *   AnonPages:        308816 kB                         -- non-file backed (heap/stack/anon mmap)
- *   Mapped:           316508 kB                         -- mapped via mmap
- *   Shmem:             43980 kB                         -- tmpfs + shared anon
- *   KReclaimable:      75440 kB                         -- slab/etc that could be reclaimed
- *   Slab:             150360 kB                         -- kernel slab (kmalloc internals)
- *   PageTables:         6192 kB                         -- memory used by page tables themselves
+ *   AnonPages:        301948 kB                         -- non-file backed (heap/stack/anon mmap)
+ *   Mapped:           317712 kB                         -- mapped via mmap
+ *   Shmem:             44380 kB                         -- tmpfs + shared anon
+ *   KReclaimable:      75052 kB                         -- slab/etc that could be reclaimed
+ *   Slab:             150240 kB                         -- kernel slab (kmalloc internals)
+ *   PageTables:         6388 kB                         -- memory used by page tables themselves
  *   CommitLimit:    11332452 kB                         -- max committable bytes (overcommit_memory=2)
- *   Committed_AS:    1986172 kB                         -- current committed memory
+ *   Committed_AS:    2042864 kB                         -- current committed memory
  *   HugePages_Total:       0                            -- huge pages reserved
  *   HugePages_Free:        0                            -- huge pages free
  *   Hugepagesize:       2048 kB                         -- huge page size

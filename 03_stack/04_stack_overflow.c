@@ -73,13 +73,16 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 03_stack/04_stack_overflow.c
  * Command: make -C 03_stack 04_stack_overflow
  * Exit status: 0
  * Output:
- * [signal] SIGSEGV at fault addr 0x7fffdf167d70 (this is the stack guard page)
+ * [signal] SIGSEGV at fault addr 0x7fffc1944f50 (this is the stack guard page)
  * RLIMIT_STACK soft=16777216 hard=18446744073709551615
- * recovered; approximate stack used = 16256000 bytes (~15875 KiB)
+ * recovered; approximate stack used = 16258048 bytes (~15877 KiB)
  * AUTO-GENERATED RUN OUTPUT END
  */

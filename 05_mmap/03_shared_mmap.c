@@ -49,6 +49,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 05_mmap/03_shared_mmap.c
  * Command: make -C 05_mmap 03_shared_mmap

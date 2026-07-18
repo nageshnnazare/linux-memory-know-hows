@@ -43,6 +43,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 01_virtual_memory/01_pagesize.c
  * Command: make -C 01_virtual_memory 01_pagesize
@@ -50,7 +53,7 @@ int main(void)
  * Output:
  * page size = 4096 (sysconf)
  * page size = 4096 (getpagesize)
- * mmap'd 1 byte at 0x7f9799002000 (page-aligned? yes)
+ * mmap'd 1 byte at 0x7fe1b1509000 (page-aligned? yes)
  * wrote p[0]=a, p[4095]=z   (still in page)
  * AUTO-GENERATED RUN OUTPUT END
  */

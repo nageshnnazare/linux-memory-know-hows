@@ -58,34 +58,38 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 04_heap_malloc/03_brk_vs_mmap.c
  * Command: make -C 04_heap_malloc 03_brk_vs_mmap
  * Exit status: 0
  * Output:
- * program break (sbrk(0)) = 0x563a63c37000
+ * program break (sbrk(0)) = 0x561fbfb0b000
  * small allocations (1 KiB each):
- *   small[0] = 0x563a63c382b0
- *   small[1] = 0x563a63c386c0
- *   small[2] = 0x563a63c38ad0
- *   small[3] = 0x563a63c38ee0
+ *   small[0] = 0x561fbfb0c2b0
+ *   small[1] = 0x561fbfb0c6c0
+ *   small[2] = 0x561fbfb0cad0
+ *   small[3] = 0x561fbfb0cee0
  * big   allocations (200 KiB each):
- *   big[0]   = 0x7f19dcb46010
- *   big[1]   = 0x7f19dcb13010
- *   big[2]   = 0x7f19dcae0010
- *   big[3]   = 0x7f19dcaad010
+ *   big[0]   = 0x7fe31a84f010
+ *   big[1]   = 0x7fe31a81c010
+ *   big[2]   = 0x7fe31a5cd010
+ *   big[3]   = 0x7fe31a59a010
  * 
- * new program break        = 0x563a63c58000   (grew? yes)
+ * new program break        = 0x561fbfb2c000   (grew? yes)
  * 
  * /proc/self/maps (filtered):
- * 563a63c37000-563a63c58000 rw-p 00000000 00:00 0                          [heap]
- * 7f19dca05000-7f19dca12000 rw-p 00000000 00:00 0 
- * 7f19dcaad000-7f19dcb7c000 rw-p 00000000 00:00 0 
- * 7f19dcb86000-7f19dcb88000 rw-p 00000000 00:00 0 
- * 7f19dcb88000-7f19dcb8c000 r--p 00000000 00:00 0                          [vvar]
- * 7f19dcb8c000-7f19dcb8e000 r--p 00000000 00:00 0                          [vvar_vclock]
- * 7f19dcb8e000-7f19dcb90000 r-xp 00000000 00:00 0                          [vdso]
- * 7fff00e10000-7fff00e32000 rw-p 00000000 00:00 0                          [stack]
+ * 561fbfb0b000-561fbfb2c000 rw-p 00000000 00:00 0                          [heap]
+ * 7fe31a59a000-7fe31a600000 rw-p 00000000 00:00 0 
+ * 7fe31a805000-7fe31a812000 rw-p 00000000 00:00 0 
+ * 7fe31a81c000-7fe31a885000 rw-p 00000000 00:00 0 
+ * 7fe31a88f000-7fe31a891000 rw-p 00000000 00:00 0 
+ * 7fe31a891000-7fe31a895000 r--p 00000000 00:00 0                          [vvar]
+ * 7fe31a895000-7fe31a897000 r--p 00000000 00:00 0                          [vvar_vclock]
+ * 7fe31a897000-7fe31a899000 r-xp 00000000 00:00 0                          [vdso]
+ * 7ffc6e489000-7ffc6e4ab000 rw-p 00000000 00:00 0                          [stack]
  * ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
  * AUTO-GENERATED RUN OUTPUT END
  */

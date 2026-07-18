@@ -34,13 +34,16 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 08_process_syscalls/03_vfork.c
  * Command: make -C 08_process_syscalls 03_vfork
  * Exit status: 0
  * Output:
  * child ran via vfork
- * [parent] before vfork, pid=3606
+ * [parent] before vfork, pid=3171
  * [parent] child exit = 0
  * AUTO-GENERATED RUN OUTPUT END
  */

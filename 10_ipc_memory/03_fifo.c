@@ -38,6 +38,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 10_ipc_memory/03_fifo.c
  * Command: make -C 10_ipc_memory 03_fifo

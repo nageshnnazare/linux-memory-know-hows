@@ -37,6 +37,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 03_stack/06_stack_canary.c
  * Command: make -C 03_stack 06_stack_canary

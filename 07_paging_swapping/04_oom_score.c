@@ -50,6 +50,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 07_paging_swapping/04_oom_score.c
  * Command: make -C 07_paging_swapping 04_oom_score
@@ -58,7 +61,7 @@ int main(void)
  * write oom_score_adj: Permission denied
  * oom_score      = 999
  * oom_score_adj  = 500
- * oom_score now  = 1000
+ * oom_score now  = 999
  * oom_score_adj  = 500
  * AUTO-GENERATED RUN OUTPUT END
  */

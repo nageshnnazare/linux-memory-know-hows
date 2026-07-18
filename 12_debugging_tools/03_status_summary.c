@@ -42,6 +42,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 12_debugging_tools/03_status_summary.c
  * Command: make -C 12_debugging_tools 03_status_summary
@@ -50,9 +53,9 @@ int main(void)
  *   VmPeak:	    2692 kB                       -- peak VSZ since exec
  *   VmSize:	    2692 kB                       -- current VSZ (sum of VMAs)
  *   VmLck:	       0 kB                        -- mlocked
- *   VmHWM:	    1360 kB                        -- peak RSS since exec
- *   VmRSS:	    1360 kB                        -- current resident set
- *   RssAnon:	     104 kB                      -- anon resident
+ *   VmHWM:	    1356 kB                        -- peak RSS since exec
+ *   VmRSS:	    1356 kB                        -- current resident set
+ *   RssAnon:	     100 kB                      -- anon resident
  *   RssFile:	    1256 kB                      -- file-backed resident
  *   RssShmem:	       0 kB                     -- shmem resident
  *   VmData:	     224 kB                       -- data segments (heap + bss)

@@ -32,35 +32,38 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 12_debugging_tools/01_proc_maps_dump.c
  * Command: make -C 12_debugging_tools 01_proc_maps_dump
  * Exit status: 0
  * Output:
  * range                          perm  size(KiB)   path                       kind      
- * 55807a453000-55807a454000 r--p           4  /home/runner/work/linux-m  file      
- * 55807a454000-55807a455000 r-xp           4  /home/runner/work/linux-m  file      
- * 55807a455000-55807a456000 r--p           4  /home/runner/work/linux-m  file      
- * 55807a456000-55807a457000 r--p           4  /home/runner/work/linux-m  file      
- * 55807a457000-55807a458000 rw-p           4  /home/runner/work/linux-m  file      
- * 5580b12a6000-5580b12c7000 rw-p         132  [heap]                     [heap]    
- * 7f6fc7a00000-7f6fc7a28000 r--p         160  /usr/lib/x86_64-linux-gnu  file      
- * 7f6fc7a28000-7f6fc7bb0000 r-xp        1568  /usr/lib/x86_64-linux-gnu  file      
- * 7f6fc7bb0000-7f6fc7bff000 r--p         316  /usr/lib/x86_64-linux-gnu  file      
- * 7f6fc7bff000-7f6fc7c03000 r--p          16  /usr/lib/x86_64-linux-gnu  file      
- * 7f6fc7c03000-7f6fc7c05000 rw-p           8  /usr/lib/x86_64-linux-gnu  file      
- * 7f6fc7c05000-7f6fc7c12000 rw-p          52                             (anon)    
- * 7f6fc7cbd000-7f6fc7cc0000 rw-p          12                             (anon)    
- * 7f6fc7cca000-7f6fc7ccc000 rw-p           8                             (anon)    
- * 7f6fc7ccc000-7f6fc7cd0000 r--p          16  [vvar]                     [vvar]    
- * 7f6fc7cd0000-7f6fc7cd2000 r--p           8  [vvar_vclock]              [vvar_vclock]
- * 7f6fc7cd2000-7f6fc7cd4000 r-xp           8  [vdso]                     [vdso]    
- * 7f6fc7cd4000-7f6fc7cd5000 r--p           4  /usr/lib/x86_64-linux-gnu  file      
- * 7f6fc7cd5000-7f6fc7d00000 r-xp         172  /usr/lib/x86_64-linux-gnu  file      
- * 7f6fc7d00000-7f6fc7d0a000 r--p          40  /usr/lib/x86_64-linux-gnu  file      
- * 7f6fc7d0a000-7f6fc7d0c000 r--p           8  /usr/lib/x86_64-linux-gnu  file      
- * 7f6fc7d0c000-7f6fc7d0e000 rw-p           8  /usr/lib/x86_64-linux-gnu  file      
- * 7ffeca957000-7ffeca979000 rw-p         136  [stack]                    [stack]   
+ * 558f64667000-558f64668000 r--p           4  /home/runner/work/linux-m  file      
+ * 558f64668000-558f64669000 r-xp           4  /home/runner/work/linux-m  file      
+ * 558f64669000-558f6466a000 r--p           4  /home/runner/work/linux-m  file      
+ * 558f6466a000-558f6466b000 r--p           4  /home/runner/work/linux-m  file      
+ * 558f6466b000-558f6466c000 rw-p           4  /home/runner/work/linux-m  file      
+ * 558f7416c000-558f7418d000 rw-p         132  [heap]                     [heap]    
+ * 7f53f5600000-7f53f5628000 r--p         160  /usr/lib/x86_64-linux-gnu  file      
+ * 7f53f5628000-7f53f57b0000 r-xp        1568  /usr/lib/x86_64-linux-gnu  file      
+ * 7f53f57b0000-7f53f57ff000 r--p         316  /usr/lib/x86_64-linux-gnu  file      
+ * 7f53f57ff000-7f53f5803000 r--p          16  /usr/lib/x86_64-linux-gnu  file      
+ * 7f53f5803000-7f53f5805000 rw-p           8  /usr/lib/x86_64-linux-gnu  file      
+ * 7f53f5805000-7f53f5812000 rw-p          52                             (anon)    
+ * 7f53f5890000-7f53f5893000 rw-p          12                             (anon)    
+ * 7f53f589d000-7f53f589f000 rw-p           8                             (anon)    
+ * 7f53f589f000-7f53f58a3000 r--p          16  [vvar]                     [vvar]    
+ * 7f53f58a3000-7f53f58a5000 r--p           8  [vvar_vclock]              [vvar_vclock]
+ * 7f53f58a5000-7f53f58a7000 r-xp           8  [vdso]                     [vdso]    
+ * 7f53f58a7000-7f53f58a8000 r--p           4  /usr/lib/x86_64-linux-gnu  file      
+ * 7f53f58a8000-7f53f58d3000 r-xp         172  /usr/lib/x86_64-linux-gnu  file      
+ * 7f53f58d3000-7f53f58dd000 r--p          40  /usr/lib/x86_64-linux-gnu  file      
+ * 7f53f58dd000-7f53f58df000 r--p           8  /usr/lib/x86_64-linux-gnu  file      
+ * 7f53f58df000-7f53f58e1000 rw-p           8  /usr/lib/x86_64-linux-gnu  file      
+ * 7ffef6d77000-7ffef6d99000 rw-p         136  [stack]                    [stack]   
  * ffffffffff600000-ffffffffff601000 --xp           4  [vsyscall]                 [vsyscall]
  * VSZ total = 2696 KiB (2 MiB)
  * AUTO-GENERATED RUN OUTPUT END

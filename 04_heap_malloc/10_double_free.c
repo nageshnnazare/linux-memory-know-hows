@@ -29,6 +29,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 04_heap_malloc/10_double_free.c
  * Command: make -C 04_heap_malloc 10_double_free

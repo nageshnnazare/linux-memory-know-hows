@@ -48,16 +48,19 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 04_heap_malloc/02_chunk_layout.c
  * Command: make -C 04_heap_malloc 02_chunk_layout
  * Exit status: 0
  * Output:
- * malloc(1)                 p=0x55bd02f362a0  prev_size=0       chunk_size=32      A=0 M=0 P=1
- * malloc(17)                p=0x55bd02f372d0  prev_size=0       chunk_size=32      A=0 M=0 P=1
- * malloc(40)                p=0x55bd02f372f0  prev_size=0       chunk_size=48      A=0 M=0 P=1
- * malloc(64)                p=0x55bd02f37320  prev_size=0       chunk_size=80      A=0 M=0 P=1
- * malloc(1000)              p=0x55bd02f37370  prev_size=0       chunk_size=1008    A=0 M=0 P=1
- * malloc(200K)              p=0x7f81b2cfb010  prev_size=0       chunk_size=208896  A=0 M=1 P=0
+ * malloc(1)                 p=0x55acb33a72a0  prev_size=0       chunk_size=32      A=0 M=0 P=1
+ * malloc(17)                p=0x55acb33a82d0  prev_size=0       chunk_size=32      A=0 M=0 P=1
+ * malloc(40)                p=0x55acb33a82f0  prev_size=0       chunk_size=48      A=0 M=0 P=1
+ * malloc(64)                p=0x55acb33a8320  prev_size=0       chunk_size=80      A=0 M=0 P=1
+ * malloc(1000)              p=0x55acb33a8370  prev_size=0       chunk_size=1008    A=0 M=0 P=1
+ * malloc(200K)              p=0x7fd524764010  prev_size=0       chunk_size=208896  A=0 M=1 P=0
  * AUTO-GENERATED RUN OUTPUT END
  */

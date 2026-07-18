@@ -56,6 +56,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 08_process_syscalls/06_signal_handler.c
  * Command: make -C 08_process_syscalls 06_signal_handler

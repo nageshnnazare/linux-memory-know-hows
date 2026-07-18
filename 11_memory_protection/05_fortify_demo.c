@@ -23,6 +23,9 @@ int main(int argc, char **argv)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 11_memory_protection/05_fortify_demo.c
  * Command: make -C 11_memory_protection 05_fortify_demo

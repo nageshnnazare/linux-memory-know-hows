@@ -50,13 +50,16 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 08_process_syscalls/01_fork.c
  * Command: make -C 08_process_syscalls 01_fork
  * Exit status: 0
  * Output:
- * [parent before fork] pid=3578 counter=0 (&counter=0x7ffcc41d4a4c)
- * [parent after wait ]  pid=3578 counter=1 (&counter=0x7ffcc41d4a4c)
+ * [parent before fork] pid=3143 counter=0 (&counter=0x7ffe484370ac)
+ * [parent after wait ]  pid=3143 counter=1 (&counter=0x7ffe484370ac)
  * [parent] child exit status = 0
  * AUTO-GENERATED RUN OUTPUT END
  */

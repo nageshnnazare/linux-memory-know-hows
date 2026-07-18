@@ -33,12 +33,15 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 05_mmap/01_anon_mmap.c
  * Command: make -C 05_mmap 01_anon_mmap
  * Exit status: 0
  * Output:
- * 4 MiB anonymous mapping @ 0x7f213ca00000
+ * 4 MiB anonymous mapping @ 0x7f0371600000
  * q[0]=0 q[4095]=0 q[len-1]=0 (all zero?)
  * after write: "hello mmap"
  * AUTO-GENERATED RUN OUTPUT END

@@ -58,14 +58,17 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 03_stack/03_alloca_vs_vla.c
  * Command: make -C 03_stack 03_alloca_vs_vla
  * Exit status: 0
  * Output:
- * &stack_anchor = 0x7ffd7ab6601c (reference)
- *   malloc  -> 0x563d91eeb2b0 (heap)
- *   alloca  -> 0x7ffd7ab65bd0 (stack)
- *   VLA     -> 0x7ffd7ab65bc0 (stack)
+ * &stack_anchor = 0x7ffcc8c2ac4c (reference)
+ *   malloc  -> 0x55895453f2b0 (heap)
+ *   alloca  -> 0x7ffcc8c2a800 (stack)
+ *   VLA     -> 0x7ffcc8c2a7f0 (stack)
  * AUTO-GENERATED RUN OUTPUT END
  */

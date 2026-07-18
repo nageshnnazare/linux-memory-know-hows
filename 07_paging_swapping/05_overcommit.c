@@ -45,17 +45,20 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 07_paging_swapping/05_overcommit.c
  * Command: make -C 07_paging_swapping 05_overcommit
  * Exit status: 0
  * Output:
- * mmap'd 256 GiB virtual at 0x7ebe1e000000 (no physical RAM used yet)
+ * mmap'd 256 GiB virtual at 0x7f05d8800000 (no physical RAM used yet)
  * VmSize:	268438148 kB
- * VmRSS:	    1484 kB
+ * VmRSS:	    1492 kB
  * VmData:	268435680 kB
  * 
  * Now touching just 64 MiB (not 256 GiB)...
- * VmRSS:	   67020 kB
+ * VmRSS:	   67028 kB
  * AUTO-GENERATED RUN OUTPUT END
  */

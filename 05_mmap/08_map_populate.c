@@ -50,12 +50,15 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 05_mmap/08_map_populate.c
  * Command: make -C 05_mmap 08_map_populate
  * Exit status: 0
  * Output:
- * no POPULATE: first sweep took 0.010 s
+ * no POPULATE: first sweep took 0.015 s
  * no POPULATE: second sweep     0.001 s (already resident)
  * POPULATE   : first sweep took 0.001 s (already faulted)
  * AUTO-GENERATED RUN OUTPUT END

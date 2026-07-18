@@ -67,6 +67,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 00_fundamentals/02_word_alignment.c
  * Command: make -C 00_fundamentals 02_word_alignment

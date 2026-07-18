@@ -37,14 +37,17 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 09_threads_memory/01_pthread_create.c
  * Command: make -C 09_threads_memory 01_pthread_create
  * Exit status: 0
  * Output:
- * main      tid=3723 &local=0x7ffecdb0e29c
- * thread #0 tid=3724 &local=0x7f0affffee4c stack=[0x7f0aff000000..0x7f0b00000000) (16384 KiB)
- * thread #1 tid=3725 &local=0x7f0afeffde4c stack=[0x7f0afdfff000..0x7f0afefff000) (16384 KiB)
- * thread #2 tid=3726 &local=0x7f0afdffce4c stack=[0x7f0afcffe000..0x7f0afdffe000) (16384 KiB)
+ * main      tid=3290 &local=0x7fff3d1a01cc
+ * thread #0 tid=3291 &local=0x7f9302bfee4c stack=[0x7f9301c00000..0x7f9302c00000) (16384 KiB)
+ * thread #1 tid=3292 &local=0x7f9301bfde4c stack=[0x7f9300bff000..0x7f9301bff000) (16384 KiB)
+ * thread #2 tid=3293 &local=0x7f92fbffee4c stack=[0x7f92fb000000..0x7f92fc000000) (16384 KiB)
  * AUTO-GENERATED RUN OUTPUT END
  */

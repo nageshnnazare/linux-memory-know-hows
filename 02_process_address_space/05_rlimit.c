@@ -73,6 +73,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 02_process_address_space/05_rlimit.c
  * Command: make -C 02_process_address_space 05_rlimit

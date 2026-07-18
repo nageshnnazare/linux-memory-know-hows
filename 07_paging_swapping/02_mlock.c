@@ -49,6 +49,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 07_paging_swapping/02_mlock.c
  * Command: make -C 07_paging_swapping 02_mlock

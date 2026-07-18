@@ -87,13 +87,16 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 14_putting_it_together/02_pool.c
  * Command: make -C 14_putting_it_together 02_pool
  * Exit status: 0
  * Output:
- * a=0x7fd315818fe0 {1, alpha}
- * b=0x7fd315818fc0 {2, beta}
- * after free(a) + alloc -> c=0x7fd315818fe0 (got a back)
+ * a=0x7ff31fdaefe0 {1, alpha}
+ * b=0x7ff31fdaefc0 {2, beta}
+ * after free(a) + alloc -> c=0x7ff31fdaefe0 (got a back)
  * AUTO-GENERATED RUN OUTPUT END
  */

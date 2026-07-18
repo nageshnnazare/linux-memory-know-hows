@@ -33,6 +33,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 12_debugging_tools/05_mallinfo_dump.c
  * Command: make -C 12_debugging_tools 05_mallinfo_dump

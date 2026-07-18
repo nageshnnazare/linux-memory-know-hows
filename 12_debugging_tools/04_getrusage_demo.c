@@ -39,14 +39,17 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 12_debugging_tools/04_getrusage_demo.c
  * Command: make -C 12_debugging_tools 04_getrusage_demo
  * Exit status: 0
  * Output:
- * [start          ] maxrss=11492    KiB  minflt=51       majflt=0   utime=0.000000s
- * [after 256M     ] maxrss=263572   KiB  minflt=188      majflt=0   utime=0.014203s
- * [after sweep    ] maxrss=263572   KiB  minflt=188      majflt=0   utime=0.023329s
- * [after free     ] maxrss=263572   KiB  minflt=188      majflt=0   utime=0.023379s
+ * [start          ] maxrss=11456    KiB  minflt=51       majflt=0   utime=0.000000s
+ * [after 256M     ] maxrss=263636   KiB  minflt=188      majflt=0   utime=0.010731s
+ * [after sweep    ] maxrss=263636   KiB  minflt=188      majflt=0   utime=0.022601s
+ * [after free     ] maxrss=263636   KiB  minflt=188      majflt=0   utime=0.022610s
  * AUTO-GENERATED RUN OUTPUT END
  */

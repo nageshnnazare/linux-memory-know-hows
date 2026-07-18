@@ -48,6 +48,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 08_process_syscalls/04_clone_raw.c
  * Command: make -C 08_process_syscalls 04_clone_raw

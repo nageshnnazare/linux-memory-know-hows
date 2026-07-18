@@ -149,6 +149,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 14_putting_it_together/03_slab.c
  * Command: make -C 14_putting_it_together 03_slab

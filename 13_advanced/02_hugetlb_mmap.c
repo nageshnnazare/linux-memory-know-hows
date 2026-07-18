@@ -36,6 +36,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 13_advanced/02_hugetlb_mmap.c
  * Command: make -C 13_advanced 02_hugetlb_mmap

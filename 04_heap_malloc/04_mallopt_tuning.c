@@ -48,6 +48,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 04_heap_malloc/04_mallopt_tuning.c
  * Command: make -C 04_heap_malloc 04_mallopt_tuning

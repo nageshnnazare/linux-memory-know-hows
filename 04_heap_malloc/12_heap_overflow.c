@@ -39,6 +39,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 04_heap_malloc/12_heap_overflow.c
  * Command: make -C 04_heap_malloc 12_heap_overflow

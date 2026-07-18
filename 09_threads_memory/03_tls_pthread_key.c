@@ -45,16 +45,19 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 09_threads_memory/03_tls_pthread_key.c
  * Command: make -C 09_threads_memory 03_tls_pthread_key
  * Exit status: 0
  * Output:
- * tid=3756 got="hello from 0" (0x7f4af4000b70)
- * [dtor] freeing 0x7f4af4000b70 in tid=3756
- * tid=3757 got="hello from 1" (0x7f4aec000b70)
- * [dtor] freeing 0x7f4aec000b70 in tid=3757
- * tid=3758 got="hello from 2" (0x7f4ae4000b70)
- * [dtor] freeing 0x7f4ae4000b70 in tid=3758
+ * tid=3323 got="hello from 0" (0x7f0bb4000b70)
+ * [dtor] freeing 0x7f0bb4000b70 in tid=3323
+ * tid=3324 got="hello from 1" (0x7f0bb4000b70)
+ * [dtor] freeing 0x7f0bb4000b70 in tid=3324
+ * tid=3325 got="hello from 2" (0x7f0bb4000b70)
+ * [dtor] freeing 0x7f0bb4000b70 in tid=3325
  * AUTO-GENERATED RUN OUTPUT END
  */

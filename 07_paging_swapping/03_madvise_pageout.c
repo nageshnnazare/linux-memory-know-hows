@@ -47,6 +47,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 07_paging_swapping/03_madvise_pageout.c
  * Command: make -C 07_paging_swapping 03_madvise_pageout

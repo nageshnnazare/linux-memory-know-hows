@@ -45,13 +45,16 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 05_mmap/09_map_fixed_noreplace.c
  * Command: make -C 05_mmap 09_map_fixed_noreplace
  * Exit status: 0
  * Output:
- * scratch addr = 0x7fad7ffd4000
- * first NOREPLACE at 0x7fad7ffd4000: OK
- * second NOREPLACE at 0x7fad7ffd4000: EEXIST  (good)
+ * scratch addr = 0x7fe859beb000
+ * first NOREPLACE at 0x7fe859beb000: OK
+ * second NOREPLACE at 0x7fe859beb000: EEXIST  (good)
  * AUTO-GENERATED RUN OUTPUT END
  */

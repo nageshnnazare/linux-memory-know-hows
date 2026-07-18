@@ -53,6 +53,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 10_ipc_memory/04_shm_open.c
  * Command: make -C 10_ipc_memory 04_shm_open

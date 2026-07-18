@@ -56,15 +56,18 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 04_heap_malloc/01_malloc_basics.c
  * Command: make -C 04_heap_malloc 01_malloc_basics
  * Exit status: 0
  * Output:
- * after malloc(8)         @ 0x559d82fdd2a0 : 00 00 00 00 00 00 00 00 
- * after calloc(8,1)       @ 0x559d82fde2d0 : 00 00 00 00 00 00 00 00 
- * after realloc(8->64)   @ 0x559d82fde2f0
- * after realloc(64->1MiB)@ 0x7f38f4430010
- * malloc(0) = 0x559d82fde2d0  (still must free!)
+ * after malloc(8)         @ 0x556407df82a0 : 00 00 00 00 00 00 00 00 
+ * after calloc(8,1)       @ 0x556407df92d0 : 00 00 00 00 00 00 00 00 
+ * after realloc(8->64)   @ 0x556407df92f0
+ * after realloc(64->1MiB)@ 0x7f0a260c8010
+ * malloc(0) = 0x556407df92d0  (still must free!)
  * AUTO-GENERATED RUN OUTPUT END
  */

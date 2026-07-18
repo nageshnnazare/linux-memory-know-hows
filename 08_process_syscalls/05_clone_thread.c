@@ -65,12 +65,15 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 08_process_syscalls/05_clone_thread.c
  * Command: make -C 08_process_syscalls 05_clone_thread
  * Exit status: 0
  * Output:
- * [thread] tid=3635 counter=2000
- * [main  ] tid=3634 counter=2000 (expected 2000)
+ * [thread] tid=3200 counter=2000
+ * [main  ] tid=3199 counter=2000 (expected 2000)
  * AUTO-GENERATED RUN OUTPUT END
  */

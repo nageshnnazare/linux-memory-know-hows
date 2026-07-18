@@ -36,14 +36,17 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 04_heap_malloc/09_tcache_demo.c
  * Command: make -C 04_heap_malloc 09_tcache_demo
  * Exit status: 0
  * Output:
- * alloc:  a=0x5615c0b622a0  b=0x5615c0b622c0  c=0x5615c0b622e0
+ * alloc:  a=0x55e7370c72a0  b=0x55e7370c72c0  c=0x55e7370c72e0
  * free order: a then b then c
- * realloc: x=0x5615c0b622e0  y=0x5615c0b622c0  z=0x5615c0b622a0
+ * realloc: x=0x55e7370c72e0  y=0x55e7370c72c0  z=0x55e7370c72a0
  * expect:  x==c (1), y==b (1), z==a (1)
  * AUTO-GENERATED RUN OUTPUT END
  */

@@ -53,16 +53,19 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 08_process_syscalls/10_sigchld.c
  * Command: make -C 08_process_syscalls 10_sigchld
  * Exit status: 0
  * Output:
- * [parent] spawned 3706
- * [parent] spawned 3707
- * [parent] spawned 3708
- * [parent] spawned 3709
- * [parent] spawned 3710
+ * [parent] spawned 3273
+ * [parent] spawned 3274
+ * [parent] spawned 3275
+ * [parent] spawned 3276
+ * [parent] spawned 3277
  * [parent] reaped 5 children
  * AUTO-GENERATED RUN OUTPUT END
  */

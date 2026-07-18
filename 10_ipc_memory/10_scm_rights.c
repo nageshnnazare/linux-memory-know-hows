@@ -87,6 +87,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 10_ipc_memory/10_scm_rights.c
  * Command: make -C 10_ipc_memory 10_scm_rights

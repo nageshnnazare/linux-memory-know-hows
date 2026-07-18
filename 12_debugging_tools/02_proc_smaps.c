@@ -35,6 +35,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 12_debugging_tools/02_proc_smaps.c
  * Command: make -C 12_debugging_tools 02_proc_smaps

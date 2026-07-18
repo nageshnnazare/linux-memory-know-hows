@@ -31,16 +31,19 @@ int main(int argc, char **argv)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 02_process_address_space/04_aslr.c
  * Command: make -C 02_process_address_space 04_aslr
  * Exit status: 0
  * Output:
- * text  (main)     = 0x559e8872a199
- * data  (data_var) = 0x559e8872d010
- * heap  (malloc)   = 0x559ea6cba2a0
- * stack (local)    = 0x7fff78608a4c
- * libc  (printf)   = 0x7f6872c60100
- * argv  (ptr)      = 0x7fff78608b88
+ * text  (main)     = 0x564837bb0199
+ * data  (data_var) = 0x564837bb3010
+ * heap  (malloc)   = 0x564848f232a0
+ * stack (local)    = 0x7ffc4373fd0c
+ * libc  (printf)   = 0x7f4bb0a60100
+ * argv  (ptr)      = 0x7ffc4373fe48
  * AUTO-GENERATED RUN OUTPUT END
  */

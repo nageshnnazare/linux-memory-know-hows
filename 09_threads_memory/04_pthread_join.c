@@ -39,6 +39,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 09_threads_memory/04_pthread_join.c
  * Command: make -C 09_threads_memory 04_pthread_join

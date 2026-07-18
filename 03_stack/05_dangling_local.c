@@ -48,6 +48,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 03_stack/05_dangling_local.c
  * Command: make -C 03_stack 05_dangling_local

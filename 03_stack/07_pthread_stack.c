@@ -69,21 +69,24 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 03_stack/07_pthread_stack.c
  * Command: make -C 03_stack 07_pthread_stack
  * Exit status: 0
  * Output:
- * [thread 140285866669760] &local       = 0x7f96d93fee54
- * [thread 140285866669760] stack base   = 0x7f96d8400000
- * [thread 140285866669760] stack top    = 0x7f96d9400000
- * [thread 140285866669760] stack size   = 16384 KiB
- * [thread 140285866669760] guard size   = 4096 bytes
- * [thread 140285849888448] &local       = 0x7f96d83fde54
- * [thread 140285849888448] stack base   = 0x7f96d83bf000
- * [thread 140285849888448] stack top    = 0x7f96d83ff000
- * [thread 140285849888448] stack size   = 256 KiB
- * [thread 140285849888448] guard size   = 4096 bytes
- * [ main ] &local         = 0x7ffe602af62c
+ * [thread 140009415898816] &local       = 0x7f567b7fee54
+ * [thread 140009415898816] stack base   = 0x7f567a800000
+ * [thread 140009415898816] stack top    = 0x7f567b800000
+ * [thread 140009415898816] stack size   = 16384 KiB
+ * [thread 140009415898816] guard size   = 4096 bytes
+ * [thread 140009418671808] &local       = 0x7f567baa3e54
+ * [thread 140009418671808] stack base   = 0x7f567ba65000
+ * [thread 140009418671808] stack top    = 0x7f567baa5000
+ * [thread 140009418671808] stack size   = 256 KiB
+ * [thread 140009418671808] guard size   = 4096 bytes
+ * [ main ] &local         = 0x7ffc4c941efc
  * AUTO-GENERATED RUN OUTPUT END
  */

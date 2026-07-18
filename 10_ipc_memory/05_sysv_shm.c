@@ -49,6 +49,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 10_ipc_memory/05_sysv_shm.c
  * Command: make -C 10_ipc_memory 05_sysv_shm

@@ -48,6 +48,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 05_mmap/06_madvise_dontneed.c
  * Command: make -C 05_mmap 06_madvise_dontneed

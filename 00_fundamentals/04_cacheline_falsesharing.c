@@ -80,13 +80,16 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 00_fundamentals/04_cacheline_falsesharing.c
  * Command: make -C 00_fundamentals 04_cacheline_falsesharing
  * Exit status: 0
  * Output:
  * FALSE-SHARING bench, 200000000 iters per thread
- *   bad layout  (counters in same cache line) : 0.317 s
- *   good layout (counters in different lines) : 0.071 s
+ *   bad layout  (counters in same cache line) : 4.397 s
+ *   good layout (counters in different lines) : 0.063 s
  * AUTO-GENERATED RUN OUTPUT END
  */

@@ -41,6 +41,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 08_process_syscalls/02_fork_exec_wait.c
  * Command: make -C 08_process_syscalls 02_fork_exec_wait

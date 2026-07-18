@@ -34,15 +34,18 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 06_brk_sbrk/01_program_break.c
  * Command: make -C 06_brk_sbrk 01_program_break
  * Exit status: 0
  * Output:
- * [start               ] sbrk(0) = 0x560434c47000
- * [after malloc(64)    ] sbrk(0) = 0x560434c68000
- * [after malloc(64K)   ] sbrk(0) = 0x560434c68000
- * [after malloc(200K)  ] sbrk(0) = 0x560434c68000
- * [after frees         ] sbrk(0) = 0x560434c68000
+ * [start               ] sbrk(0) = 0x55d374289000
+ * [after malloc(64)    ] sbrk(0) = 0x55d3742aa000
+ * [after malloc(64K)   ] sbrk(0) = 0x55d3742aa000
+ * [after malloc(200K)  ] sbrk(0) = 0x55d3742aa000
+ * [after frees         ] sbrk(0) = 0x55d3742aa000
  * AUTO-GENERATED RUN OUTPUT END
  */

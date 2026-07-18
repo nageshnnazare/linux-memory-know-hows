@@ -32,6 +32,9 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 10_ipc_memory/01_pipe.c
  * Command: make -C 10_ipc_memory 01_pipe

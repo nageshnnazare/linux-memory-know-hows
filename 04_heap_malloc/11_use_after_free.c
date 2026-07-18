@@ -46,13 +46,16 @@ int main(void)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 04_heap_malloc/11_use_after_free.c
  * Command: make -C 04_heap_malloc 11_use_after_free
  * Exit status: 0
  * Output:
- * alloc:        p=0x558d19a492a0  data="live"
- * after free:   p=0x558d19a492a0  data (first 8 hex): 499ad15805000000
- * q=0x558d19a492a0  r=0x558d19a4a2e0   (note q==p, r could be anywhere)
+ * alloc:        p=0x55f8a35942a0  data="live"
+ * after free:   p=0x55f8a35942a0  data (first 8 hex): 94358a5f05000000
+ * q=0x55f8a35942a0  r=0x55f8a35952e0   (note q==p, r could be anywhere)
  * AUTO-GENERATED RUN OUTPUT END
  */

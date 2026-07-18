@@ -48,6 +48,9 @@ int main(int argc, char **argv)
 }
 
 /*
+ */
+
+/*
  * AUTO-GENERATED RUN OUTPUT START
  * Source: 08_process_syscalls/09_zombie_orphan.c
  * Command: make -C 08_process_syscalls 09_zombie_orphan
