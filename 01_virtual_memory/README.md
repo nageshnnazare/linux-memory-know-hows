@@ -19,8 +19,8 @@ of bit 47). Bit-by-bit:
    63                 47       39       30       21       12       0
    |                  |        |        |        |        |        |
    +---------+--------+--------+--------+--------+--------+--------+
-   | sign ext| PML4   | PDPT   | PD     | PT     | page offset    |
-   | bits 63..48      | 9 bits | 9 bits | 9 bits | 9 bits | 12 b  |
+   | sign ext| PML4   | PDPT   | PD     | PT     |   page offset   |
+   |   bits 63..48    | 9 bits | 9 bits | 9 bits | 9 bits | 12 b   |
    +------------------+--------+--------+--------+--------+--------+
         |                  |       |       |       |          |
         +-- must equal     |       |       |       |          +--> byte within
@@ -39,13 +39,13 @@ of bit 47). Bit-by-bit:
 ### Page-table entry (PTE) layout (simplified)
 
 ```
-   bit  63 62..52 51 .... 12 11..9   8  7  6  5  4  3  2  1  0
-        +---+------+--------+-----+--+--+--+--+--+--+--+--+--+
-        | NX|  hw  |  PFN   | sw  | G|PS| D| A|PCD|PWT|U/S|R/W|P|
-        +---+------+--------+-----+--+--+--+--+--+--+--+--+--+
-         |    res  | phys   | OS  |  |  |  |  |   |   |    |  |
-         |         | frame# | use |  |  |  |  |   |   |    |  +-> Present
-         |                  |     |  |  |  |  |   |   |    +-> Read/Write
+   bit  63   62..52  51..12 11..9   8  7  6  5  4  3  2  1  0
+        +---+------+--------+-----+--+--+--+--+---+---+---+---+--+
+        | NX|  hw  |  PFN   | sw  | G|PS| D| A|PCD|PWT|U/S|R/W| P|
+        +---+------+--------+-----+--+--+--+--+---+---+---+---+--+
+         |    res  | phys   | OS  |  |  |  |  |   |   |   |   |
+         |         | frame# | use |  |  |  |  |   |   |   |   +-> Present
+         |                  |     |  |  |  |  |   |   |   +-> Read/Write
          |                  |     |  |  |  |  |   |   +-> User/Supervisor
          |                  |     |  |  |  |  |   +-> Cache Disable
          |                  |     |  |  |  |  +-> Write-Through
